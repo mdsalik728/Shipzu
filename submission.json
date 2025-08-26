@@ -1,0 +1,15 @@
+{
+  "submitted_at_ist": "YYYY-MM-DDTHH:mm:ss+05:30",
+  "kpi": {
+    "delivered_percent": 28.160919540229884,
+    "rto_percent": 18.333333333333332,
+    "orders_at_risk": 26,
+    "drr": 2.142857142857143
+  },
+  "rules_thresholds": {
+    "delivered_percent": 85,
+    "rto_percent": 8,
+    "orders_at_risk": 20
+  },
+  "rules_triggers": []
+}
