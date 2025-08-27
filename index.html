@@ -132,12 +132,14 @@
       function formatISTTime() {
             const now = new Date();
             
+               const minutes = now.getUTCMinutes();
+            const seconds = now.getUTCSeconds();
+             const hours = now.getUTCHours();
             const year = now.getUTCFullYear();
             const month = (now.getUTCMonth() + 1).toString().padStart(2, '0');
             const day = now.getUTCDate().toString().padStart(2, '0');
-            const hours = now.getUTCHours();
-            const minutes = now.getUTCMinutes();
-            const seconds = now.getUTCSeconds();
+           
+         
             
            
             const istHours = (hours + 5) % 24;
@@ -153,7 +155,7 @@
             const formattedSeconds = seconds.toString().padStart(2, '0');
 
             
-            return `${year}-${month}-${day} T ${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+            return `${year}-${month}-${day}T${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
         }
 
       async function main() {
